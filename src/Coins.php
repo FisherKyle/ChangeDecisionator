@@ -7,7 +7,7 @@
             // echo $currency_number;
 
             $currencyArray = array($currency_number);
-            $lastPlace = count(currencyArray); 
+            $lastPlace = count(currencyArray);
             echo $lastplace;
             // if ($currency_number < 5) {
             // return ("pennies: " . $currency_number);
@@ -31,7 +31,19 @@
             //     return ("dimes: 1 nickels: 1");
             // }
 
+            $quarters = ($currency_number / 25);
+            $remainingNumber = ($currency_number % 25);
+            $dimes = ($remaining_number / 10);
+            $newRemainingNumber = ($dimes % 10);
+            $nickels = ($newRemainingNumber / 5);
+            $pennies = ($newRemainingNumber / 5);
 
+usernumber / 25 = $quarters
+usernumber % 25 = remainingnumber
+remaining / 10 = $dimes
+remaining % 10 = newremaining
+newremaining / 5 = $nickels
+newremaining % 5 = pennies
         }
     }
 
